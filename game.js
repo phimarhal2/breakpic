@@ -8,7 +8,7 @@ class PixelParticle {
             x: (Math.random() - 0.5) * 2,
             y: (Math.random() + 1) * 2
         };
-        this.friction = 0.99;
+        this.friction = 0.98;
         this.gravity = 0.2;
         this.bounce = 0.7;
     }
