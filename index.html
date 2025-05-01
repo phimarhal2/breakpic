@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Physics Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #container {
+            text-align: center;
+        }
+        canvas {
+            border: 2px solid #333;
+            background-color: #fff;
+            width: 800px;
+            height: 800px;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        #uploadButton {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #instructions {
+            margin: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <input type="file" id="uploadButton" accept="image/*">
+        <button id="reloadButton" style="display: none;">Reload Current Image</button>
+        <div id="instructions">1. Upload an image<br>2. Click to break it<br>3. Click 'Reload' to reset or upload a new image</div>
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
